@@ -79,12 +79,13 @@ export default function KnockOnWood() {
           border: '3px solid #666666',
           borderRadius: '50%',
           overflow: 'hidden',
-          background: '#333333', // Placeholder background until image is provided
         }}>
-          {/* Placeholder for portrait image */}
-          <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-            Image Coming Soon
-          </div>
+          <Image
+            src="/portraits/niccy.png"
+            alt="Nicholas Sujecki portrait"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
         </div>
         <div style={{
           fontFamily: 'Comic Sans MS, cursive',
