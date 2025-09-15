@@ -1,0 +1,23 @@
+.bannerContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollingText {
+  display: inline-block;
+  animation: scrollText linear infinite;
+  padding-right: 100%;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

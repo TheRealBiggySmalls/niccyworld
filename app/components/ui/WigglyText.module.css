@@ -1,0 +1,24 @@
+.wigglyContainer {
+  display: inline-block;
+}
+
+.wigglyChar {
+  display: inline-block;
+  animation: wiggle 2s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(4px) rotate(1deg);
+  }
+}
